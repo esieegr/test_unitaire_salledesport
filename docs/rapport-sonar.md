@@ -10,12 +10,6 @@ Objectif
 Résumé (une phrase)
 - Après refactorings sûrs et ajout de tests, le projet passe le Quality Gate SonarQube (Quality Gate: Passed) et la note de maintainability est A. Les tests (10) sont verts.
 
-Avant / Après (captures)
-- Capture 1 — Dashboard Projects (before/after) : docs/images/sonar-projects.png
-- Capture 2 — Project Overview (before) : docs/images/sonar-overview-before.png
-- Capture 3 — Project Overview (after) : docs/images/sonar-overview-after.png
-- Capture 4 — Activity / Issues trend : docs/images/sonar-activity.png
-
 Remarques clés
 - Tests : 10 tests JUnit5, tous verts (commande run: `mvn -DskipTests=false test`).
 - Refactors appliqués (3) :
