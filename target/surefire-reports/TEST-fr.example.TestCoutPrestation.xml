@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="FR"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-25.0.2.10-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\Gianni\AppData\Local\Temp\surefire8396593155579695158\surefirebooter-20260518140500382_3.jar C:\Users\Gianni\AppData\Local\Temp\surefire8396593155579695158 2026-05-18T14-05-00_294-jvmRun1 surefire-20260518140500382_1tmp surefire_0-20260518140500382_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Gianni\AppData\Local\Temp\surefire18292392046639327070\surefirebooter-20260518152533805_3.jar C:\Users\Gianni\AppData\Local\Temp\surefire18292392046639327070 2026-05-18T15-25-33_711-jvmRun1 surefire-20260518152533805_1tmp surefire_0-20260518152533805_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Gianni\Downloads\TP_salle_de_sport-main\TP_salle_de_sport-main\target\test-classes;C:\Users\Gianni\Downloads\TP_salle_de_sport-main\TP_salle_de_sport-main\target\classes;C:\Users\Gianni\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\Gianni\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\Gianni\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\Gianni\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Gianni\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\Gianni\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Gianni\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\Gianni\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Gianni\AppData\Local\Temp\surefire8396593155579695158\surefirebooter-20260518140500382_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Gianni\AppData\Local\Temp\surefire18292392046639327070\surefirebooter-20260518152533805_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="25.0.2+10-LTS"/>
@@ -41,7 +41,6 @@
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="skipTests" value="false"/>
     <property name="java.vendor.version" value="Temurin-25.0.2+10"/>
     <property name="localRepository" value="C:\Users\Gianni\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>

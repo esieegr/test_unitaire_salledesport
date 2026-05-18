@@ -25,6 +25,3 @@ Résumé des tests (10) et notes Red / Green / Refactor
 10) TestCoutPrestation
   - Intention: vérifier le calcul des coûts d'une prestation.
   - Green: `coutPrestation()` additionne les prix correctement.
-
-Remarque TDD
-- Les tests fournis avaient déjà une bonne couverture du comportement métier principal. J'ai assuré que chaque refactor préservait les tests (Green) et ajouté des protections d'API (encapsulation, listes immutables) pour améliorer la maintenabilité.

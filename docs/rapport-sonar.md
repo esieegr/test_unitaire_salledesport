@@ -108,9 +108,6 @@ $env:SONAR_TOKEN = 'YOUR_TOKEN'
 mvn -X sonar:sonar
 ```
 
----
-Ces ajouts détaillent les corrections déjà faites et proposent les actions suivantes pour réduire davantage les issues Sonar. Dis-moi si tu veux que je prépare les patches (A) pour appliquer automatiquement ces changements (tests vérifiés) ou si tu préfères recevoir seulement les extraits de code (B) à appliquer toi‑même.
-
 Commandes utilisées
 - Lancer tests :
 ```powershell
