@@ -1,0 +1,10 @@
+fr\exemple\DatabaseConnection.class
+fr\exemple\SalleDeSport.class
+fr\exemple\AbonnementPremium.class
+fr\exemple\Prestation.class
+fr\exemple\Main.class
+fr\exemple\StatutReservation.class
+fr\exemple\Reservation.class
+fr\exemple\Adherent.class
+fr\exemple\Abonnement.class
+fr\exemple\Seance.class

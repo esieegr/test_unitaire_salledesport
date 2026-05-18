@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>fr.example</groupId>
+    <artifactId>tp-salle-de-sport</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <junit.jupiter.version>5.10.0</junit.jupiter.version>
+        <!-- Explicit Sonar properties to avoid double-indexing when using non-standard layout -->
+    <!-- Sonar: use relative paths so inclusion/exclusion patterns work as expected -->
+    <sonar.sources>src</sonar.sources>
+    <sonar.tests>src/test</sonar.tests>
+    <!-- Ensure Sonar excludes the test folder from main sources -->
+    <sonar.exclusions>src/test/**</sonar.exclusions>
+    <!-- Default Sonar host and login can be read from environment to avoid shell quoting issues -->
+    <sonar.host.url>http://localhost:9000</sonar.host.url>
+    <sonar.login>${env.SONAR_TOKEN}</sonar.login>
+    <!-- Set the Sonar project key/name to the one shown in your SonarQube UI -->
+    <sonar.projectKey>tp-salledesport</sonar.projectKey>
+    <sonar.projectName>tp-salledesport</sonar.projectName>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <!-- Project uses non-standard layout: sources in src, tests in src/test -->
+        <sourceDirectory>${project.basedir}/src</sourceDirectory>
+        <testSourceDirectory>${project.basedir}/src/test</testSourceDirectory>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <!-- exclude test folder from main compilation because project uses non-standard layout 'src' -->
+                    <excludes>
+                        <exclude>test/**</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.1.2</version>
+                <configuration>
+                    <useModulePath>false</useModulePath>
+                    <providerImplementation>junit-platform</providerImplementation>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
