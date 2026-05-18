@@ -16,6 +16,3 @@ mvn -DskipTests=false test
 ```powershell
 mvn -X sonar:sonar
 ```
-
-Rapport
-- Le rapport 1 page est dans `docs/rapport-sonar.md`. Placez vos captures sous `docs/images/` et convertissez le Markdown vers PDF si nécessaire.
